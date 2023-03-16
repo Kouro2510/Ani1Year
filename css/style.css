@@ -6,6 +6,7 @@ body{
     margin: 0;
     line-height: 1.5;
     font-size: 16px;
+    background-color: #f3f2f1;
 }
 :before,:after{
     box-sizing: border-box;
@@ -43,6 +44,19 @@ header,section,footer{
 }
 .align-item-center{
     align-items: center;
+}
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.section-title h2{
+    font-size: 45px;
+    color: #000000;
+    font-weight: 700;
+    font-family: "Great Vibes",cursive;
 }
 .header{
     position: absolute;
@@ -85,6 +99,7 @@ header,section,footer{
     text-decoration: none;
     transition: color 0.5s ease;
 }
+/*Slider*/
 .home-section{
     min-height: 100vh;
     background-color: gray;
@@ -168,4 +183,52 @@ header,section,footer{
         opacity: 1;
         transform: translateY(0px);
     }
+}
+/*Couple*/
+.couple-section{
+    padding: 80px 0 80px;
+}
+.couple-section .couple{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 60px;
+    text-align: center;
+    position: relative;
+}
+.couple-section .couple i.fa-heart{
+    position: absolute;
+    left: -15px;
+    width: 31px;
+    background-color: #f3f2f1;
+    padding: 5px;
+    font-size: 18px;
+    top: 30%;
+}
+.couple-section .couple:nth-child(2):before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #cccccc;
+}
+.couple-section .couple img{
+    max-width: 280px;
+    width: 100%;
+    border-radius: 50%;
+    border: 10px solid transparent;
+}
+.couple-section .couple h3{
+    font-size: 40px;
+    margin: 15px 0;
+    font-family: 'Great Vibes',cursive;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+.couple-section .couple p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #555555;
+    margin: 0;
 }
