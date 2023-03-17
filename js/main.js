@@ -60,6 +60,15 @@ $(window).on("load", function () {
     })
 })
 $(document).ready(function (){
+
+    $(".hamburger-btn").click(function (){
+        $(".header .nav").slideToggle();
+    })
+    $(".header .nav a").click(function (){
+        if($(window).width()< 768 ){
+            $(".header .nav").slideToggle()
+        }
+    })
     $(window).scroll(function (){
         if($(this).scrollTop()>100){
             $(".header").addClass("fixed")
@@ -71,4 +80,17 @@ $(document).ready(function (){
     $.scrollIt({
         topOffset: -50
     });
-})
+});
+$(document).ready(function() {
+    var audio = $("#myAudio")[0];
+
+    $('#main-content').click(function() {
+        $('#overlay').fadeIn();
+    });
+
+    $('#overlay').click(function() {
+        $("#overlay").removeClass("overlay")
+        audio.play();
+        $(this).fadeOut();
+    });
+});
