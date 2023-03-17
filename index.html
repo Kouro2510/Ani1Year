@@ -5,13 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>1 year Anniversary 💕</title>
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skins/pink.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/scrollIt.min.js"></script>
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 <header class="header">
@@ -20,35 +21,38 @@
             <div class="logo">
                 <a href="index.html">P & H</a>
             </div>
+            <div class="hamburger-btn">
+                <span></span>
+            </div>
             <div class="nav">
                 <ul>
                     <li>
-                        <a href="#" class="active">
+                        <a data-scroll-nav="0" href="#" class="active">
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a data-scroll-nav="1" href="#">
                             Couple
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a data-scroll-nav="2" href="#">
                             Story
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a data-scroll-nav="3" href="#">
                             Event
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a data-scroll-nav="4" href="#">
                             Gallery
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a data-scroll-nav="5" href="#">
                             RSVP
                         </a>
                     </li>
@@ -58,7 +62,7 @@
     </div>
 </header>
 <!--Slider-->
-<section class="home-section text-center">
+<section class="home-section text-center" data-scroll-index="0">
     <div class="slide active" style="background-image: url('img/slides/slide-1.jpg')">
         <div class="container">
             <div class="row align-item-center">
@@ -94,7 +98,7 @@
     </div>
 </section>
 <!--Couple-->
-<section class="couple-section">
+<section class="couple-section" data-scroll-index="1">
     <div class="container">
         <div class="row">
             <div class="section-title">
@@ -121,7 +125,7 @@
     </div>
 </section>
 <!--Story-->
-<section class="story-section">
+<section class="story-section" data-scroll-index="2">
     <div class="container">
         <div class="row">
             <div class="section-title">
@@ -205,16 +209,130 @@
     </div>
 </section>
 <!--Event-->
-<section class="event-section">
+<section class="event-section" data-scroll-index="3">
     <div class="container">
-        <div class="section-title">
-            <h2>Celebrate our love</h2>
+        <div class="row">
+            <div class="section-title">
+                <h2>Celebrate our love</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="event-item">
+                <div class="event-item-inner">
+                    <h3>Ceremory</h3>
+                    <span class="date">20 - 3 - 2023</span>
+                    <span class="time">0 : 00 PM</span>
+                    <p>{ Shagun Farm }</p>
+                    <p>Band Road,Near Radhye, Mohan drive</p>
+                    <img src="img/icons/flower.svg" alt="event">
+                </div>
+            </div>
+            <div class="event-item">
+                <div class="event-item-inner">
+                    <h3>Ceremory</h3>
+                    <span class="date">20 - 3 - 2023</span>
+                    <span class="time">0 : 00 PM</span>
+                    <p>{ Shagun Farm }</p>
+                    <p>Band Road,Near Radhye, Mohan drive, Jonapur,Chattarpur , Mehrauli, New Delhi, Delhi 110047</p>
+                    <img src="img/icons/flower.svg" alt="event">
+                </div>
+            </div>
         </div>
     </div>
 </section>
 <!--Gallery-->
-<section class="gallery-section">
-
+<section class="gallery-section" data-scroll-index="4">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>Our Memories</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="img/gallery/thumb/1.jpg" data-large="img/gallery/large/1.jpg" alt="couple gallery">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="img/gallery/thumb/2.jpg" data-large="img/gallery/large/2.jpg" alt="couple gallery">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="img/gallery/thumb/3.jpg" data-large="img/gallery/large/3.jpg" alt="couple gallery">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-inner">
+                    <img src="img/gallery/thumb/4.jpg" data-large="img/gallery/large/4.jpg" alt="couple gallery">
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+<!--rsvp-->
+<section class="rsvp-section" data-scroll-index="5">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>You are message for me</h2>
+                <p>Please kindly response  before 3 Dec 2023 </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="rsvp-form">
+                <form class="form">
+                    <div class="row">
+                        <div class="input-group">
+                            <label>
+                                <textarea placeholder="Message" class="input-control"></textarea>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-group">
+                            <button type="submit" class="btn-1">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-content">
+                <div class="couple-name">
+                    <img src="img/flower-circle.png" alt="wedding couple">
+                    <h2>Soshiv
+                        <span>&</span>
+                        Shivani
+                    </h2>
+                </div>
+                <p>Love You</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--popup-->
+<div class="gallery-popup">
+    <div class="gp-container">
+        <div class="gp-counter">1/6</div>
+        <div class="gp-close">&times;</div>
+        <img src="img/gallery/large/1.jpg" class="gp-img" alt="gallery img">
+        <div class="gp-controls">
+            <div class="prev">
+                <i class="fas fa-angle-left"></i>
+            </div>
+            <div class="next">
+                <i class="fas fa-angle-right"></i>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
