@@ -410,7 +410,7 @@ header,section,footer{
 }
 .event-section .event-item-inner{
     background-color: #ffffff;
-    padding: 60px 45px 100px;
+    padding: 60px 22px 100px;
     text-align: center;
     box-shadow: 0 0 10px #888888;
     flex: 0 0 100%;
@@ -672,6 +672,14 @@ header,section,footer{
     font-weight: normal;
     text-align: center;
 }
+#countdown{
+    font-size: 20px;
+    font-family: "Great Vibes",cursive;
+    color: #000000;
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+}
 .overlay {
     position: fixed;
     top: 0;
@@ -681,6 +689,9 @@ header,section,footer{
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     display: block;
+}
+.none{
+    display: none!important;
 }
 .overlay img{
     width: 200px;

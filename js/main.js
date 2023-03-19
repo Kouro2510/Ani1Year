@@ -90,6 +90,7 @@ $(document).ready(function() {
 
     $('#overlay').click(function() {
         $("#overlay").removeClass("overlay")
+        $("#overlay").addClass("none")
         audio.play();
         $(this).fadeOut();
     });
